@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-09-24T21:12:55</DateModified>
+  <DateModified>2020-09-24T22:32:28</DateModified>
   <ModuleName>RAM</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/Education/CA/Lab/Basic_Computer/Basic_computer/iseconfig/RAM.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Education/CA/Lab/Basic_Computer/Basic_computer</ImplementationReportsDirectory>
+  <SavedFilePath>E:/Computer Architecture/ca_fp/Basic_computer/iseconfig/RAM.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/Computer Architecture/ca_fp/Basic_computer\</ImplementationReportsDirectory>
   <DateInitialized>2020-09-24T21:12:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
