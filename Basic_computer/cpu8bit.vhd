@@ -4,10 +4,11 @@ USE ieee.std_logic_unsigned.ALL;
 
 ENTITY CPU8BIT IS
 	PORT (
-		data : INOUT std_logic_vector(7 DOWNTO 0);
+		data_in : IN std_logic_vector(7 DOWNTO 0);
+		data_out : OUT std_logic_vector(7 DOWNTO 0);
 		adress : OUT std_logic_vector(5 DOWNTO 0);
 		oe : OUT std_logic;
-		we : OUT std_logic; -- Asynchronous memory interface
+		we : OUT std_logic;
 		rst : IN std_logic;
 		clk : IN std_logic);
 END;
@@ -31,7 +32,7 @@ BEGIN
 			-- PC / Adress path
 			IF (state = S0) THEN
 				pc <= adreg + 1;
-				adreg <= data(4 DOWNTO 0);
+				adreg <= data_in(4 DOWNTO 0);
 			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1')
 				adreg <= pc;
 			END IF;
@@ -42,8 +43,8 @@ BEGIN
 				WHEN S4 =>
 					akku(8) <= '0'; -- clearing carry
 					pc <= adreg;
-				WHEN S5 => akku(7 DOWNTO 0) <= akku(7 DOWNTO 0) AND data; -- and
-				WHEN S6 => akku <= ("0" & akku(7 DOWNTO 0)) + ("0" & data); -- add
+				WHEN S5 => akku(7 DOWNTO 0) <= akku(7 DOWNTO 0) AND data_in; -- and
+				WHEN S6 => akku <= ("0" & akku(7 DOWNTO 0)) + ("0" & data_in); -- add
 				WHEN S7 => akku <= NOT akku; -- not
 				WHEN S8 => akku <= akku(7 DOWNTO 0) & '0'; -- shl
 				WHEN OTHERS => NULL; -- instr. fetch, jcc taken (000), sta (001) 
@@ -53,7 +54,7 @@ BEGIN
 			IF (state /= S0) THEN
 				state <= S0; -- fetch next opcode
 			ELSE
-				CASE data(7 DOWNTO 5) IS
+				CASE data_in(7 DOWNTO 5) IS
 					WHEN "000" => state <= S1;
 					WHEN "001" => state <= S2;
 					WHEN "010" => state <= S3;
@@ -70,7 +71,7 @@ BEGIN
 
 	-- output
 	adress <= adreg;
-	data <= "ZZZZZZZZ" WHEN state /= S2 ELSE akku(7 DOWNTO 0);
+	data_out <= akku(7 DOWNTO 0);
 	oe <= '0' WHEN (clk = '1' OR state = S2 OR rst = '0') ELSE '1'; -- no memory access during reset and 
 	we <= '0' WHEN (clk = '1' OR state /= S2 OR rst = '0') ELSE '1';
 

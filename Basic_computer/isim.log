@@ -1,5 +1,5 @@
 ISim log file
-Running: E:\Education\CA\Lab\Basic_Computer\Basic_computer\uut_RAM_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Education/CA/Lab/Basic_Computer/Basic_computer/uut_RAM_isim_beh.wdb 
+Running: E:\Computer Architecture\ca_fp\Basic_computer\uut_RAM_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Computer Architecture/ca_fp/Basic_computer/uut_RAM_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,6 +8,8 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run
-# run 1000 ns
-# run 5000 ns
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us

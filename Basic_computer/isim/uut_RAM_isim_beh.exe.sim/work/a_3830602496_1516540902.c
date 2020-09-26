@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "E:/Education/CA/Lab/Basic_Computer/Basic_computer/RAM.vhd";
+static const char *ng0 = "E:/Computer Architecture/ca_fp/Basic_computer/RAM.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
@@ -77,9 +77,9 @@ LAB3:    t1 = (t0 + 3632);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(57, ng0);
-    t1 = (t0 + 6473);
+    t1 = (t0 + 6429);
     *((int *)t1) = 0;
-    t5 = (t0 + 6477);
+    t5 = (t0 + 6433);
     *((int *)t5) = 31;
     t6 = 0;
     t7 = 31;
@@ -90,12 +90,12 @@ LAB5:    if (t6 <= t7)
 LAB8:    goto LAB3;
 
 LAB6:    xsi_set_current_line(58, ng0);
-    t8 = (t0 + 6481);
+    t8 = (t0 + 6437);
     t10 = (8U != 8U);
     if (t10 == 1)
         goto LAB9;
 
-LAB10:    t11 = (t0 + 6473);
+LAB10:    t11 = (t0 + 6429);
     t12 = *((int *)t11);
     t13 = (t12 - 31);
     t14 = (t13 * -1);
@@ -109,16 +109,16 @@ LAB10:    t11 = (t0 + 6473);
     memcpy(t21, t8, 8U);
     xsi_driver_first_trans_delta(t17, t16, 8U, 0LL);
 
-LAB7:    t1 = (t0 + 6473);
+LAB7:    t1 = (t0 + 6429);
     t6 = *((int *)t1);
-    t2 = (t0 + 6477);
+    t2 = (t0 + 6433);
     t7 = *((int *)t2);
     if (t6 == t7)
         goto LAB8;
 
 LAB11:    t12 = (t6 + 1);
     t6 = t12;
-    t5 = (t0 + 6473);
+    t5 = (t0 + 6429);
     *((int *)t5) = t6;
     goto LAB5;
 
@@ -158,7 +158,7 @@ LAB15:    xsi_set_current_line(64, ng0);
     t9 = *((char **)t2);
     t2 = (t0 + 1192U);
     t11 = *((char **)t2);
-    t2 = (t0 + 6128U);
+    t2 = (t0 + 6084U);
     t6 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t11, t2);
     t7 = (t6 - 31);
     t14 = (t7 * -1);
@@ -185,7 +185,7 @@ LAB21:    xsi_set_current_line(67, ng0);
     t8 = *((char **)t1);
     t1 = (t0 + 1192U);
     t9 = *((char **)t1);
-    t1 = (t0 + 6128U);
+    t1 = (t0 + 6084U);
     t6 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t9, t1);
     t7 = (t6 - 31);
     t14 = (t7 * -1);
