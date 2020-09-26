@@ -33,7 +33,7 @@ BEGIN
 			IF (state = S0) THEN
 				pc <= adreg + 1;
 				adreg <= data_in(4 DOWNTO 0);
-			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1')
+			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1') THEN
 				adreg <= pc;
 			END IF;
 
@@ -58,8 +58,12 @@ BEGIN
 					WHEN "000" => state <= S1;
 					WHEN "001" => state <= S2;
 					WHEN "010" => state <= S3;
-					WHEN "011" => state <= S4 WHEN akku(8) = 1 ELSE
-						S0;
+					WHEN "011" =>
+						IF akku(8) = '1' THEN
+							state <= S4;
+						ELSE
+							state <= S0;
+						END IF;
 					WHEN "100" => state <= S5;
 					WHEN "101" => state <= S6;
 					WHEN "110" => state <= S7;
