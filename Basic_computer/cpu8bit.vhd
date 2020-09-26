@@ -4,8 +4,7 @@ USE ieee.std_logic_unsigned.ALL;
 
 ENTITY CPU8BIT IS
 	PORT (
-		data_in : IN std_logic_vector(7 DOWNTO 0);
-		data_out : OUT std_logic_vector(7 DOWNTO 0);
+		data : INOUT std_logic_vector(7 DOWNTO 0);
 		adress : OUT std_logic_vector(5 DOWNTO 0);
 		oe : OUT std_logic;
 		we : OUT std_logic; -- Asynchronous memory interface
@@ -29,11 +28,11 @@ BEGIN
 			akku <= (OTHERS => '0');
 			pc <= (OTHERS => '0');
 		ELSIF rising_edge(clk) THEN
-			-- PC / Address path
+			-- PC / Adress path
 			IF (state = S0) THEN
 				pc <= adreg + 1;
-				adreg <= data_in(4 DOWNTO 0);
-			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1') THEN
+				adreg <= data(4 DOWNTO 0);
+			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1')
 				adreg <= pc;
 			END IF;
 
@@ -54,12 +53,12 @@ BEGIN
 			IF (state /= S0) THEN
 				state <= S0; -- fetch next opcode
 			ELSE
-				CASE data_in(7 DOWNTO 5) IS
+				CASE data(7 DOWNTO 5) IS
 					WHEN "000" => state <= S1;
 					WHEN "001" => state <= S2;
 					WHEN "010" => state <= S3;
 					WHEN "011" => state <= S4 WHEN akku(8) = 1 ELSE
-						S3;
+						S0;
 					WHEN "100" => state <= S5;
 					WHEN "101" => state <= S6;
 					WHEN "110" => state <= S7;
@@ -72,7 +71,7 @@ BEGIN
 	-- output
 	adress <= adreg;
 	data <= "ZZZZZZZZ" WHEN state /= S2 ELSE akku(7 DOWNTO 0);
-	oe <= '1' WHEN (clk = '1' OR state = S0 OR rst = '0') ELSE '0'; -- no memory access during reset and 
-	we <= '1' WHEN (clk = '1' OR state /= S0 OR rst = '0') ELSE '0';
+	oe <= '0' WHEN (clk = '1' OR state = S2 OR rst = '0') ELSE '1'; -- no memory access during reset and 
+	we <= '0' WHEN (clk = '1' OR state /= S2 OR rst = '0') ELSE '1';
 
 END CPU_ARCH;
