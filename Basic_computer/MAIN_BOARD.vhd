@@ -66,13 +66,13 @@ component CPU8BIT IS
 END component;
 
 signal ram_to_cpu, cpu_to_ram : STD_LOGIC_VECTOR (7 DOWNTO 0);
-signal oe_w,  we_r : STD_LOGIC;
+signal oe_r,  we_w : STD_LOGIC;
 signal address_sig : STD_LOGIC_VECTOR (4 DOWNTO 0); 
 
 begin
 
-ram_unit: RAM port map ( data_in => cpu_to_ram , w => oe_w, r => we_r, rst => rst_ram, clk => clk, data_out => ram_to_cpu, addr => address_sig);
-cpu_unit: CPU8BIT port map (data_in => ram_to_cpu , we => we_r, oe => oe_w, rst => rst_cpu, clk => clk, data_out => cpu_to_ram, adress => address_sig);
+ram_unit: RAM port map ( data_in => cpu_to_ram , w => we_w, r => oe_r, rst => rst_ram, clk => clk, data_out => ram_to_cpu, addr => address_sig);
+cpu_unit: CPU8BIT port map (data_in => ram_to_cpu , we => we_w, oe => oe_r, rst => rst_cpu, clk => clk, data_out => cpu_to_ram, adress => address_sig);
 
 end Behavioral;
 

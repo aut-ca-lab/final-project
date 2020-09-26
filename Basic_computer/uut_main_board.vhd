@@ -50,7 +50,7 @@ ARCHITECTURE behavior OF uut_main_board IS
     
 
    --Inputs
-   signal rst_ram : std_logic := '0';
+   signal rst_ram : std_logic := '1';
    signal rst_cpu : std_logic := '0';
    signal clk : std_logic := '0';
 
@@ -81,7 +81,7 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       wait for 12 ns;
-		rst_ram <= '1';
+--		rst_ram <= '1';
 		rst_cpu <= '1';
 
       wait for clk_period*40;

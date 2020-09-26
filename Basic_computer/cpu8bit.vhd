@@ -31,7 +31,7 @@ BEGIN
 		ELSIF rising_edge(clk) THEN
 			-- PC / Adress path
 			IF (state = S0) THEN
-				pc <= adreg + 1;
+				pc <= pc + 1;
 				adreg <= data_in(4 DOWNTO 0);
 			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1') THEN
 				adreg <= pc;
@@ -77,7 +77,7 @@ BEGIN
 	-- output
 	adress <= adreg;
 	data_out <= akku(7 DOWNTO 0);
-	oe <= '0' WHEN (clk = '1' OR state = S2 OR rst = '0') ELSE '1'; -- no memory access during reset and 
-	we <= '0' WHEN (clk = '1' OR state /= S2 OR rst = '0') ELSE '1';
+	oe <= '0' WHEN (clk = '1' OR state = S2) ELSE '1'; -- no memory access during reset and 
+	we <= '0' WHEN (clk = '1' OR state /= S2) ELSE '1';
 
 END CPU_ARCH;

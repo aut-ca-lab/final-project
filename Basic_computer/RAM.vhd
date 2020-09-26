@@ -45,7 +45,7 @@ end RAM;
 
 architecture rtl of RAM is
 
-type ram_cells is array (31 downto 0) of std_logic_vector(7 downto 0);
+type ram_cells is array (0 to 31) of std_logic_vector(7 downto 0);
 signal ram : ram_cells:= 
 (		
 		"00011110" , "10111111" , "00111110" , "01100101" , "01000001" , "00011100" , "11000000" , "11100000",
