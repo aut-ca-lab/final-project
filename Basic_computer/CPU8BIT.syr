@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: CPU8BIT.prj
 
@@ -108,15 +108,16 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" into library work
 Parsing entity <CPU8BIT>.
 Parsing architecture <CPU_ARCH> of entity <cpu8bit>.
-ERROR:HDLCompiler:1731 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 60: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
-ERROR:HDLCompiler:1690 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 60: This construct is only supported in VHDL 1076-2008
-ERROR:HDLCompiler:854 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 15: Unit <cpu_arch> ignored due to previous errors.
+ERROR:HDLCompiler:806 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 37: Syntax error near "adreg".
+ERROR:HDLCompiler:1731 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 61: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
+ERROR:HDLCompiler:1690 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 61: This construct is only supported in VHDL 1076-2008
+ERROR:HDLCompiler:854 - "E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 16: Unit <cpu_arch> ignored due to previous errors.
 VHDL file E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd ignored due to errors
 --> 
 
 Total memory usage is 4488192 kilobytes
 
-Number of errors   :    3 (   0 filtered)
+Number of errors   :    4 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

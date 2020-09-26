@@ -1,1 +1,3 @@
+work	"MAIN_BOARD.vhd"
 work	"RAM.vhd"
+work	"cpu8bit.vhd"

@@ -5,7 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3019" delta="new" >HDL ADVISOR - <arg fmt="%s" index="1">256</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">ram</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 37: Syntax error near &quot;<arg fmt="%s" index="1">adreg</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1731" delta="new" >"E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 61: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1690" delta="new" >"E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 61: This construct is only supported in VHDL 1076-2008
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="new" >"E:\Education\CA\Lab\Basic_Computer\ca_fp\Basic_computer\cpu8bit.vhd" Line 16: Unit &lt;<arg fmt="%s" index="1">cpu_arch</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>
