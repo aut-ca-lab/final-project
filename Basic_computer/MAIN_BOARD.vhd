@@ -58,21 +58,21 @@ component CPU8BIT IS
 	PORT (
 		data_in : IN std_logic_vector(7 DOWNTO 0);
 		data_out : OUT std_logic_vector(7 DOWNTO 0);
-		adress : OUT std_logic_vector(5 DOWNTO 0);
+		adress : OUT std_logic_vector(4 DOWNTO 0);
 		oe : OUT std_logic;
-		we : OUT std_logic; -- Asynchronous memory interface
+		we : OUT std_logic;
 		rst : IN std_logic;
 		clk : IN std_logic);
 END component;
 
 signal ram_to_cpu, cpu_to_ram : STD_LOGIC_VECTOR (7 DOWNTO 0);
-signal oe_w,  we_r : STD_LOGIC_VECTOR;
+signal oe_w,  we_r : STD_LOGIC;
 signal address_sig : STD_LOGIC_VECTOR (4 DOWNTO 0); 
 
 begin
 
 ram_unit: RAM port map ( data_in => cpu_to_ram , w => oe_w, r => we_r, rst => rst_ram, clk => clk, data_out => ram_to_cpu, addr => address_sig);
-cpu_unit: CPU8BIT port map (data_in => ram_to_cpu , we => we_r, oe => oe_w, rst => rst_cpu, clk => clk, data_out => cpu_to_ram, address => address_sig);
+cpu_unit: CPU8BIT port map (data_in => ram_to_cpu , we => we_r, oe => oe_w, rst => rst_cpu, clk => clk, data_out => cpu_to_ram, adress => address_sig);
 
 end Behavioral;
 

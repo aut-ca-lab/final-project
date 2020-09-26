@@ -6,7 +6,7 @@ ENTITY CPU8BIT IS
 	PORT (
 		data_in : IN std_logic_vector(7 DOWNTO 0);
 		data_out : OUT std_logic_vector(7 DOWNTO 0);
-		adress : OUT std_logic_vector(5 DOWNTO 0);
+		adress : OUT std_logic_vector(4 DOWNTO 0);
 		oe : OUT std_logic;
 		we : OUT std_logic;
 		rst : IN std_logic;
@@ -68,6 +68,7 @@ BEGIN
 					WHEN "101" => state <= S6;
 					WHEN "110" => state <= S7;
 					WHEN "111" => state <= S8;
+					WHEN OTHERS => NULL;
 				END CASE;
 			END IF;
 		END IF;

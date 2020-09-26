@@ -1,0 +1,4 @@
+vhdl work "RAM.vhd"
+vhdl work "cpu8bit.vhd"
+vhdl work "MAIN_BOARD.vhd"
+vhdl work "uut_main_board.vhd"

@@ -5,17 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1728" delta="unknown" >"E:/Computer Architecture/ca_fp/Basic_computer/MAIN_BOARD.vhd" Line 74: Type error near <arg fmt="%s" index="1">oe_w</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">std_logic</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1728" delta="unknown" >"E:/Computer Architecture/ca_fp/Basic_computer/MAIN_BOARD.vhd" Line 75: Type error near <arg fmt="%s" index="1">we_r</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">std_logic</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1314" delta="unknown" >"E:/Computer Architecture/ca_fp/Basic_computer/MAIN_BOARD.vhd" Line 75: Formal port/generic &lt;<arg fmt="%s" index="1">address</arg>&gt; is not declared in &lt;<arg fmt="%s" index="2">cpu8bit</arg>&gt;
-</msg>
-
-<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"E:/Computer Architecture/ca_fp/Basic_computer/MAIN_BOARD.vhd" Line 42: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 
