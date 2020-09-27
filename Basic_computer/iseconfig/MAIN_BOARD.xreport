@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-09-26T19:54:45</DateModified>
+  <DateModified>2020-09-27T14:36:04</DateModified>
   <ModuleName>MAIN_BOARD</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/Computer Architecture/ca_fp/Basic_computer/iseconfig/MAIN_BOARD.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Computer Architecture/ca_fp/Basic_computer</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/Computer Architecture/ca_fp/Basic_computer\</ImplementationReportsDirectory>
   <DateInitialized>2020-09-26T19:54:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

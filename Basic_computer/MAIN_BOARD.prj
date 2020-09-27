@@ -1,3 +1,0 @@
-vhdl work "RAM.vhd"
-vhdl work "cpu8bit.vhd"
-vhdl work "MAIN_BOARD.vhd"

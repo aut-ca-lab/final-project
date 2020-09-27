@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -32,7 +32,7 @@ void std_env_sub_2117836309_325555557(char *t0, char *t1, int t2)
 
 LAB0:    t5 = (t4 + 4U);
     *((int *)t5) = t2;
-    t6 = (t0 + 3452);
+    t6 = (t0 + 2096);
     xsi_report(t6, 4U, (unsigned char)2);
 
 LAB1:    return;
@@ -54,7 +54,7 @@ void std_env_sub_2592003824_325555557(char *t0, char *t1, int t2)
 
 LAB0:    t5 = (t4 + 4U);
     *((int *)t5) = t2;
-    t6 = (t0 + 3456);
+    t6 = (t0 + 2100);
     xsi_report(t6, 6U, (unsigned char)3);
 
 LAB1:    return;

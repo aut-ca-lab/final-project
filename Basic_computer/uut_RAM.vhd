@@ -29,6 +29,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 USE ieee.std_logic_unsigned.ALL;
+use std.env.finish;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -140,7 +141,7 @@ BEGIN
 			wait for clk_period*5;
 		end loop;
 		
-   	wait;
+   	finish;
    
    end process;
 

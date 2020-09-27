@@ -28,7 +28,7 @@ BEGIN
 			state <= S0;
 			akku <= (OTHERS => '0');
 			pc <= (OTHERS => '0');
-		ELSIF rising_edge(clk) THEN
+		ELSIF falling_edge(clk) THEN
 			-- PC / Adress path
 			IF (state = S0) THEN
 				pc <= pc + 1;
@@ -39,6 +39,7 @@ BEGIN
 
 			-- ALU / Data Path
 			CASE state IS
+				WHEN S1 => akku(7 DOWNTO 0) <= data_in;
 				WHEN S3 => pc <= adreg;
 				WHEN S4 =>
 					akku(8) <= '0'; -- clearing carry

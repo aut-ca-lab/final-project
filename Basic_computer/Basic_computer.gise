@@ -22,60 +22,18 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Basic_computer.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CPU8BIT.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CPU8BIT.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU8BIT.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="CPU8BIT.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="CPU8BIT.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="CPU8BIT_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="CPU8BIT_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPU8BIT_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MAIN_BOARD.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MAIN_BOARD.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MAIN_BOARD.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MAIN_BOARD.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MAIN_BOARD.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MAIN_BOARD_beh.prj"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MAIN_BOARD_envsettings.html"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MAIN_BOARD_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MAIN_BOARD_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MAIN_BOARD_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MAIN_BOARD_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="RAM.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="RAM.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="RAM.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="RAM.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RAM.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="RAM.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="RAM.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="RAM.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="RAM_envsettings.html"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="RAM_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="RAM_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RAM_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="uut_RAM_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="uut_RAM_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="uut_RAM_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="uut_RAM_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="uut_main_board_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="uut_main_board_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="uut_main_board_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1600971179" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1600971179">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1601156737" xil_pn:in_ck="-7235218920799210623" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1601156737">
+    <transform xil_pn:end_ts="1601205198" xil_pn:in_ck="-7235218920799210623" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1601205198">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MAIN_BOARD.vhd"/>
@@ -84,19 +42,19 @@
       <outfile xil_pn:name="uut_RAM.vhd"/>
       <outfile xil_pn:name="uut_main_board.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1601145952" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5647827730536393495" xil_pn:start_ts="1601145952">
+    <transform xil_pn:end_ts="1601204770" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5647827730536393495" xil_pn:start_ts="1601204770">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1601145952" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7960883947865654407" xil_pn:start_ts="1601145952">
+    <transform xil_pn:end_ts="1601204770" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7960883947865654407" xil_pn:start_ts="1601204770">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1601142355" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-650748279809166753" xil_pn:start_ts="1601142355">
+    <transform xil_pn:end_ts="1601204770" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-650748279809166753" xil_pn:start_ts="1601204770">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1601156737" xil_pn:in_ck="-7235218920799210623" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1601156737">
+    <transform xil_pn:end_ts="1601205198" xil_pn:in_ck="-7235218920799210623" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1601205198">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MAIN_BOARD.vhd"/>
@@ -105,11 +63,9 @@
       <outfile xil_pn:name="uut_RAM.vhd"/>
       <outfile xil_pn:name="uut_main_board.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1601156741" xil_pn:in_ck="-7235218920799210623" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7840551624763758920" xil_pn:start_ts="1601156737">
+    <transform xil_pn:end_ts="1601205200" xil_pn:in_ck="-7235218920799210623" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7840551624763758920" xil_pn:start_ts="1601205198">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -117,18 +73,12 @@
       <outfile xil_pn:name="uut_main_board_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1601156741" xil_pn:in_ck="7689361497922316787" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3428291273051564645" xil_pn:start_ts="1601156741">
+    <transform xil_pn:end_ts="1601205201" xil_pn:in_ck="7141782423846296280" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3428291273051564645" xil_pn:start_ts="1601205200">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="uut_main_board_isim_beh.wdb"/>
-    </transform>
-    <transform xil_pn:end_ts="1601142022" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1601142022">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 
