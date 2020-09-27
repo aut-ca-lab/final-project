@@ -78,7 +78,7 @@ BEGIN
 	-- output
 	adress <= adreg;
 	data_out <= akku(7 DOWNTO 0);
-	oe <= '0' WHEN (clk = '1' OR state = S2) ELSE '1'; -- no memory access during reset and 
+	oe <= '1'; -- no memory access during reset and 
 	we <= '0' WHEN (clk = '1' OR state /= S2) ELSE '1';
 
 END CPU_ARCH;

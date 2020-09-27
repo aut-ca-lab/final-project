@@ -66,10 +66,10 @@ begin
 		
 		 else
 				if (rising_edge(clk)) then
-					if(w = '1' and r = '0') then  
+					if(w = '1') then  
 						ram(to_integer(unsigned(addr))) <= data_in;
-					
-					elsif (r = '1' and w = '0') then 
+					end if;
+					if (r = '1') then 
 						data_out <= ram(to_integer(unsigned(addr)));
 					
 					end if;
