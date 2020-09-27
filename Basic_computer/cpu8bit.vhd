@@ -35,15 +35,22 @@ BEGIN
 				adreg <= data_in(4 DOWNTO 0);
 			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1') THEN
 				adreg <= pc;
+			ELSE
+				pc <= adreg;
 			END IF;
 
 			-- ALU / Data Path
 			CASE state IS
 				WHEN S1 => akku(7 DOWNTO 0) <= data_in;
-				WHEN S3 => pc <= adreg;
+				WHEN S3 => NULL;
 				WHEN S4 =>
-					akku(8) <= '0'; -- clearing carry
-					pc <= adreg;
+					IF akku(8) = '1' THEN
+						akku(8) <= '0'; -- clearing carry
+						-- pc <= adreg;
+					ELSE
+						-- state <= S0;
+						NULL;
+					END IF;
 				WHEN S5 => akku(7 DOWNTO 0) <= akku(7 DOWNTO 0) AND data_in; -- and
 				WHEN S6 => akku <= ("0" & akku(7 DOWNTO 0)) + ("0" & data_in); -- add
 				WHEN S7 => akku <= NOT akku; -- not
@@ -59,12 +66,7 @@ BEGIN
 					WHEN "000" => state <= S1;
 					WHEN "001" => state <= S2;
 					WHEN "010" => state <= S3;
-					WHEN "011" =>
-						IF akku(8) = '1' THEN
-							state <= S4;
-						ELSE
-							state <= S0;
-						END IF;
+					WHEN "011" => state <= S4;
 					WHEN "100" => state <= S5;
 					WHEN "101" => state <= S6;
 					WHEN "110" => state <= S7;
