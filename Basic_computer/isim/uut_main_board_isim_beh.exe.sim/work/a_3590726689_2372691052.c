@@ -133,7 +133,7 @@ LAB4:    xsi_set_current_line(85, ng0);
     t2 = (t0 + 948U);
     t4 = *((char **)t2);
     t3 = *((int64 *)t4);
-    t8 = (t3 * 40);
+    t8 = (t3 * 80);
     t2 = (t0 + 1548);
     xsi_process_wait(t2, t8);
 

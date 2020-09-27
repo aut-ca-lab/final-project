@@ -84,7 +84,7 @@ BEGIN
 --		rst_ram <= '1';
 		rst_cpu <= '1';
 
-      wait for clk_period*40;
+      wait for clk_period*80;
 
       -- insert stimulus here 
 

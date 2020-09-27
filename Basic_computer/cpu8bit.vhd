@@ -33,7 +33,7 @@ BEGIN
 			IF (state = S0) THEN
 				pc <= pc + 1;
 				adreg <= data_in(4 DOWNTO 0);
-			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1') THEN
+			ELSIF state /= S3 AND (state /= S4 OR akku(8) /= '1') THEN
 				adreg <= pc;
 			END IF;
 
