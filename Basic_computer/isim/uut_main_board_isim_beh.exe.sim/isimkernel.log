@@ -8,3 +8,26 @@ Sun Sep 27 16:12:59 2020
 
 
  Elaboration Time: 0.90625 sec
+
+ Current Memory Usage: 1627.59 Meg
+
+ Total Signals          : 30
+ Total Nets             : 302
+ Total Signal Drivers   : 12
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 8
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 804
+
+** Failure:finish
+User(VHDL) Code Called Simulation Stop
+In process uut_main_board.vhd:stim_proc 
+ 
+
+
+** Failure:finish
+User(VHDL) Code Called Simulation Stop
+In process uut_main_board.vhd:stim_proc 
+ 
+

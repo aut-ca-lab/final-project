@@ -35,18 +35,16 @@ BEGIN
 				adreg <= data_in(4 DOWNTO 0);
 			ELSIF state /= S3 OR (state /= S4 OR akku(8) /= '1') THEN
 				adreg <= pc;
-			ELSE
-				pc <= adreg;
 			END IF;
 
 			-- ALU / Data Path
 			CASE state IS
 				WHEN S1 => akku(7 DOWNTO 0) <= data_in;
-				WHEN S3 => NULL;
+				WHEN S3 => pc <= adreg;
 				WHEN S4 =>
 					IF akku(8) = '1' THEN
 						akku(8) <= '0'; -- clearing carry
-						-- pc <= adreg;
+						pc <= adreg;
 					ELSE
 						-- state <= S0;
 						NULL;
