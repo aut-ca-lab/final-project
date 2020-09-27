@@ -1,2 +1,0 @@
-ISim log file
-Running: E:\Computer Architecture\ca_fp\Basic_computer\uut_main_board_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Computer Architecture/ca_fp/Basic_computer/uut_main_board_isim_beh.wdb 

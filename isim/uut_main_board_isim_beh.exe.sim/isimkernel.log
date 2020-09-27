@@ -1,0 +1,40 @@
+Command line:
+   uut_main_board_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60962
+
+Sun Sep 27 19:43:02 2020
+
+
+ Elaboration Time: 0.515625 sec
+
+ Current Memory Usage: 5162.81 Meg
+
+ Total Signals          : 30
+ Total Nets             : 302
+ Total Signal Drivers   : 12
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 8
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 804
+
+** Failure:finish
+User(VHDL) Code Called Simulation Stop
+In process uut_main_board.vhd:stim_proc 
+ 
+
+
+** Failure:finish
+User(VHDL) Code Called Simulation Stop
+In process uut_main_board.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 1.04688 sec
+
+ Current Memory Usage: 5005.52 Meg
+
+Sun Sep 27 19:44:33 2020
+
